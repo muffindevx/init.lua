@@ -30,8 +30,6 @@ return require('packer').startup(function(use)
         requires = { 'kyazdani42/nvim-web-devicons', opt = true }
     }
 
-
-
     use {
         'VonHeikemen/lsp-zero.nvim',
         branch = 'v1.x',
@@ -53,5 +51,13 @@ return require('packer').startup(function(use)
             {'L3MON4D3/LuaSnip'},             -- Required
             {'rafamadriz/friendly-snippets'}, -- Optional
         }
+    }
+
+    use{ 
+        "folke/which-key.nvim",
+        config = function() 
+            vim.o.timeout = true
+            vim.o.timeoutlen = 300
+        end
     }
 end)
