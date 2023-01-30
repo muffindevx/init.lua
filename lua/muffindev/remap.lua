@@ -18,4 +18,3 @@ vim.keymap.set('n', '<leader>?', '<cmd>Telescope oldfiles<cr>', default_opts)
 vim.keymap.set('n', '<leader>ff', '<cmd>Telescope find_files<cr>', default_opts)
 vim.keymap.set('n', '<leader>fg', '<cmd>Telescope live_grep<cr>', default_opts)
 vim.keymap.set('n', '<leader>fs', '<cmd>Telescope current_buffer_fuzzy_find<cr>', default_opts)
-'
